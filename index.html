@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/jszip.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+</head>
+
+<body>
+	<div id="app"></div>
+
+	<div>
+		<form enctype="multipart/form-data">
+			<div>
+				<label for='file1'>BPCS からダウンロードした在庫のファイル ili.txt を選んでください。</label>
+				<input type="file" name="file1" id='file1' accept="text/plain">
+			</>
+			<div>
+				<label for='file2'>楽天注文のエクセルファイルを選択してください。</label>
+				<input type="file" name="file2" id='file2'>
+			</div>
+			<!-- <button type="submit">Submit</button> -->
+		</form>
+		<p id='output1'>
+		<p id='output2'>
+	</div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
