@@ -119,7 +119,7 @@ let openRakutenExcelFile = function(evt, outputArea) {
   }; // end reader.onload
 
   reader.onerror = function(err) {
-        console.log(err);
+    console.log(err);
   };
 
   reader.readAsBinaryString(input.files[0]);
