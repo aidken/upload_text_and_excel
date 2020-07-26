@@ -1,5 +1,17 @@
 import "./styles.css";
 
+let maybeShowRunButton = function() {
+  let status1 = document.getElementById('status1').innerHTML;
+  let status2 = document.getElementById('status2').innerHTML;
+
+  console.log(`status1 is ${status1}.`);
+  console.log(`status2 is ${status2}.`);
+
+  if (status1 === 'true' && status2 === 'true') {
+    document.getElementById('runButton').style.visibility = 'visible';
+  }
+}
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
@@ -79,10 +91,19 @@ let openInventoryFile = function(evt, outputArea) {
     }
 
     output.innerHTML = tmpText;
+
+    document.getElementById('status1').innerHTML = 'true';
+    maybeShowRunButton();
+
+  };  // ebd reader.onload
+
+  reader.onerror = function(err) {
+    console.log(err);
   };
 
   reader.readAsText(input.files[0]);
-};
+
+};  // end openInventoryFile = function() {
 
 // Rakuten Order Line class
 let RakutenOrderLine = function(i) {
@@ -116,6 +137,10 @@ let openRakutenExcelFile = function(evt, outputArea) {
 
     let output = document.getElementById(outputArea);
     output.innerHTML = tmpText;
+
+    document.getElementById('status2').innerHTML = 'true';
+    maybeShowRunButton();
+
   }; // end reader.onload
 
   reader.onerror = function(err) {

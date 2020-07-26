@@ -12,9 +12,10 @@ they parse uploaded file, do something about uploaded contents, and show feedbac
 Reference I read today:
 - [HTML label tag](https://www.w3schools.com/tags/tag_label.asp)
 - [How to parse Excel file in Javascript/HTML5](https://stackoverflow.com/a/52870648/1797738)
+- [Get Programming with JavaScript](https://www.manning.com/books/get-programming-with-javascript)
 - [JavaScripture FileReader](https://www.javascripture.com/FileReader)
 - [JavaScripture Array](https://www.javascripture.com/Array#forEach)
 
 Can I let browser understand edits I make at VS Code? -> Yes.
 
-Now I want to write code that runs upon two uploads are done. How can I fire this event? Read [Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events).
+Now I want to write code that runs upon two uploads are done. How can I fire this event? Read [Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events). Let's fire successful events when parsing of files is done, and run code that use parsed data from files.
