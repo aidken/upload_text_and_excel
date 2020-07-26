@@ -2,14 +2,29 @@ body {
   font-family: sans-serif;
 }
 
-/* #status1 {
+#status1 {
   visibility: hidden;
 }
 
 #status2 {
   visibility: hidden;
 }
- */
+
+#output1 {
+  visibility: hidden;
+}
+
+#output2 {
+  visibility: hidden;
+}
+
+#output3 {
+  visibility: hidden;
+}
+
+#output4 {
+  visibility: hidden;
+}
 
 #runButton {
   visibility: hidden;
