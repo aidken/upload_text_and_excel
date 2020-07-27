@@ -41,5 +41,7 @@ Reference I read today:
 - [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
   You can write either of
->  typeof variable
->  typeof(variable)
+
+    typeof variable
+    
+    typeof(variable)
